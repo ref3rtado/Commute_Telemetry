@@ -1,0 +1,22 @@
+services:
+  #app:
+  #  build: .
+  #  ports:
+  #    - "8080:8080"
+  #  environment:
+  #    - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
+  #    - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/commute
+  #  depends_on:
+  #    - db
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=commute
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - commute-data:/var/lib/postgresql/data
+
+volumes:
+  commute-data:
