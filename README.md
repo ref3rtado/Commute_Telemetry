@@ -64,6 +64,8 @@ src/main/java/com/commutetracker/
 ├── repository/       # Spring Data JPA data access
 └── config/           # Rate limiter, app configuration
 ```
+### Database Schema
+![Database Schema](docs/ERDv1.drawio.svg)
 
 ## Prerequisites (Subject to Change)
 
