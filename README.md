@@ -65,7 +65,7 @@ src/main/java/com/commutetracker/
 └── config/           # Rate limiter, app configuration
 ```
 ### Database Schema
-![Database Schema](docs/ERDv2.drawio.svg)
+![Database Schema](docs/ERDv3.drawio.svg)
 
 ## Prerequisites (Subject to Change)
 
